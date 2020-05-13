@@ -10,6 +10,7 @@
     <RelativeLayout
         android:id="@+id/mainContainer"
         android:layout_width="match_parent"
+        android:padding="10dp"
         android:layout_height="match_parent"
         android:visibility="visible">
 
@@ -25,6 +26,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:weightSum="3">
 
                 <LinearLayout
@@ -138,10 +142,12 @@
                 android:layout_height="10dp" />
 
             <LinearLayout
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="2">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -212,10 +218,6 @@
                         android:textSize="14sp" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
-
             </LinearLayout>
         </LinearLayout>
 
@@ -282,6 +284,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif-monospace"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
                     android:text="Min Temp: 5°C"
                     android:textStyle="bold" />
 
@@ -293,8 +297,10 @@
                     android:id="@+id/temp_max"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="monospace"
+                    android:fontFamily="serif-monospace"
                     android:text="Max Temp: 40°C"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
             </LinearLayout>
 
